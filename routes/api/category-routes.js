@@ -63,17 +63,22 @@ router.put('/:id', async (req, res) => {
 });
 
 
-// router.delete('/:id', (req, res) => {
+// router.delete('/:id', async (req, res) => {
 //   // delete a category by its `id` value
-//   Book.destroy({
-//     where: {
-//       book_id: req.params.book_id,
-//     },
-//   })
-//     .then((deletedBook) => {
-//       res.json(deletedBook);
-//     })
-//     .catch((err) => res.json(err));
+//   try {
+//     const dltCategoryData = await Category.destory(req.body, {
+//       where: {
+//         id: req.params.id,
+//       },
+//     });
+//     if (!dltCategoryData[0]) {
+//       res.status(404).json({ message: 'No user with this id!' });
+//       return;
+//     }
+//     res.status(200).json(dltCategoryData);
+//   } catch (err) {
+//     res.status(500).json(err);
+//   }
 // });
 
 
