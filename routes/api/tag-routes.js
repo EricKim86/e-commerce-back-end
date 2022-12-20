@@ -63,8 +63,22 @@ router.put('/:id', async (req, res) => {
   }
 });
 
-router.delete('/:id', (req, res) => {
-  // delete on tag by its `id` value
+router.delete('/:id', async (req, res) => {
+  // delete a category by its `id` value
+  try {
+    const dltTagData = await Tag.destroy({
+      where: {
+        id: req.params.id,
+      },
+    });
+    if (!dltTagData) {
+      res.status(404).json({ message: 'No user with this id!' });
+      return;
+    }
+    res.status(200).json(dltTagData);
+  } catch (err) {
+    res.status(500).json(err);
+  }
 });
 
 module.exports = router;

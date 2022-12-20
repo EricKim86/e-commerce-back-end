@@ -63,23 +63,23 @@ router.put('/:id', async (req, res) => {
 });
 
 
-// router.delete('/:id', async (req, res) => {
-//   // delete a category by its `id` value
-//   try {
-//     const dltCategoryData = await Category.destory(req.body, {
-//       where: {
-//         id: req.params.id,
-//       },
-//     });
-//     if (!dltCategoryData[0]) {
-//       res.status(404).json({ message: 'No user with this id!' });
-//       return;
-//     }
-//     res.status(200).json(dltCategoryData);
-//   } catch (err) {
-//     res.status(500).json(err);
-//   }
-// });
+router.delete('/:id', async (req, res) => {
+  // delete a category by its `id` value
+  try {
+    const dltCategoryData = await Category.destroy({
+      where: {
+        id: req.params.id,
+      },
+    });
+    if (!dltCategoryData) {
+      res.status(404).json({ message: 'No user with this id!' });
+      return;
+    }
+    res.status(200).json(dltCategoryData);
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
 
 
 module.exports = router;
