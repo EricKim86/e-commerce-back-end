@@ -2,7 +2,7 @@
  
 
   ## Description
-  This application utilizes mysql12 and inquirer npm to allow a user to view and modify various tables.  A user is able to view an employee roster, role, and department tables.  In addition, a user is able to add additional employees, roles, and departments allowing the aforementioned tables to be updated dynamically.
+  This application utilizes mysql12 and sequelize to allow a user to access a database to view, create, update, and delete data on various tables.  
 
   ## Table of Contents
     
@@ -17,8 +17,6 @@
     -express v4.17.1<br/>
     -mysql2 v2.1.0<br/>
     -sequelize v5.21.7<br/>
-
-
 
   ## Usage
   GitHub Repository: https://github.com/EricKim86/e-commerce-back-end <br/>
