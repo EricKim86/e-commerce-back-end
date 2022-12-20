@@ -21,13 +21,13 @@
   ## Usage
   GitHub Repository: https://github.com/EricKim86/e-commerce-back-end <br/>
 
-  Video Walkthrough: https://youtu.be/nfq50ajTNIwhttps://youtu.be/nfq50ajTNIw<br/>
+  Video Walkthrough: https://youtu.be/ExlndTlrYMs<br/>
 
   Get Category Example: <br/>
   <img src="https://github.com/EricKim86/e-commerce-back-end/blob/main/assets/images/get-category.png?raw=true" width="600"/><br/>
 
 
-  ## How to Contribute
+  ## Contribute
   Please visit me at: https://github.com/EricKim86. 
 
   If you have any questions, feel free to reach me at: erickimek86@gmail.com.
