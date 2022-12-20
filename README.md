@@ -2,7 +2,7 @@
  
 
   ## Description
-  This application utilizes mysql12 and sequelize to allow a user to access a database to view, create, update, and delete data on various tables.  
+  This application utilizes sequelize to allow a user to access a database to view, create, update, and delete data on various tables in Insomnia.  
 
   ## Table of Contents
     
@@ -23,9 +23,8 @@
 
   Video Walkthrough: https://youtu.be/nfq50ajTNIwhttps://youtu.be/nfq50ajTNIw<br/>
 
-Get Category Example: <br/>
-
-  <img src="https://github.com/EricKim86/e-commerce-back-end/blob/main/assets/get-category.png?raw=true" width="600"/><br/>
+  Get Category Example: <br/>
+  <img src="https://github.com/EricKim86/e-commerce-back-end/blob/main/assets/images/get-category.png?raw=true" width="600"/><br/>
 
 
   ## How to Contribute
